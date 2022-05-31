@@ -1,0 +1,56 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>GetStudentController</servlet-name>
+  	<display-name>GetStudentController</display-name>
+  	<description></description>
+  	<servlet-class>com.arham.web.GetStudentController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CreateStudentController</servlet-name>
+  	<display-name>CreateStudentController</display-name>
+  	<description></description>
+  	<servlet-class>com.arham.web.CreateStudentController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateStudentController</servlet-name>
+  	<display-name>UpdateStudentController</display-name>
+  	<description></description>
+  	<servlet-class>com.arham.web.UpdateStudentController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteStudentController</servlet-name>
+  	<display-name>DeleteStudentController</display-name>
+  	<description></description>
+  	<servlet-class>com.arham.web.DeleteStudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GetStudentController</servlet-name>
+  	<url-pattern>/getStudent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CreateStudentController</servlet-name>
+  	<url-pattern>/createStudent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateStudentController</servlet-name>
+  	<url-pattern>/updateStudent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteStudentController</servlet-name>
+  	<url-pattern>/deleteStudent</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/Error404.jsp</location>
+  </error-page>
+    <error-page>
+  	<error-code>500</error-code>
+  	<location>/Error500.jsp</location>
+  </error-page>
+</web-app>
